@@ -1,1 +1,1 @@
-# playground
+trying to add random things I learned during my journey
