@@ -41,4 +41,25 @@ car.describe = function () {
     );
 };
 
+// since the function is inside an object, this.xxx should means the parent property
+
 car.describe();
+
+car.maintenance = {
+    lastService: "2024-12-01",
+    mileage: 15000,
+    serviceCenter: "SuperAuto Garage"
+};
+
+
+car.maintenance.nextServiceDue = function () {
+    console.log(`Next service due at ${this.mileage + 5000} miles`)
+}
+
+car.maintenance.nextServiceDue()
+
+car.describe = function () {
+    console.log(`This car is a ${this.year} ${this.color} ${this.brand}`)
+}
+
+car.describe()
