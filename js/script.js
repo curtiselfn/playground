@@ -18,6 +18,7 @@ const dog = {
 dog.bark();
 
 const car = {
+    type: "Corolla",
     brand: "Toyota",
     year: 2020,
     color: "black",
@@ -59,7 +60,7 @@ car.maintenance.nextServiceDue = function () {
 car.maintenance.nextServiceDue()
 
 car.describe = function () {
-    console.log(`This car is a ${this.year} ${this.color} ${this.brand}`)
+    console.log(`This car is a ${this.year} ${this.brand} ${this.type}`)
 }
 
 car.describe()
